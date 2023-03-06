@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <div>
+        <h1> Cadastro de Devs</h1>
+        <p> Complete Suas Informações</p>
+        <br>
+
+    </div>
+
+    <form>
+        <fieldset>
+            <div>
+                <label>Nome</label>
+                <input type="text" name="Nome" id="Nome">
+            </div>
+
+            <div>
+                <label>Sobrenome</label>
+                <input type="text" name="Sobrenome" id="Sobrenome">
+            </div>
+
+        </fieldset>
+        
+        <div>
+            <label>Email</label>
+            <input type="email" name="email" id="email" required placeholder="seu.email@aqui.com">
+
+            <label for="telefone">telefone</label>
+		<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+        </div>
+
+        <div>
+            <label>De qual lado da aplicação você desenvolve?</label>
+            <label>
+                <input type="radio" name="devweb" value="frontend">Front-end
+
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="back-end">back-end
+
+            </label>
+
+            <label>
+                <input type="radio" name="devweb" value="fullstack">Fullstack
+            </label>
+
+        </div>
+
+        <div>
+            <label>Senioriade</label>
+            <select id="Senioriade">
+                <option selected disabled value="">selecione</option>
+                <option>Junior</option>
+                <option>Pleno</option>
+                <option>Senior</option>
+            </select>
+        </div>
+
+        <fieldset>
+
+            <div>
+                <label>
+                    
+                </label>
+            </div>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
