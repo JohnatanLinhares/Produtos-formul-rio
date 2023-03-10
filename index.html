@@ -9,28 +9,37 @@
 </head>
 <body>
 
+    <nav class="menu">
+        <ul>
+
+            <li><a href="index.html">Formulário</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+        </ul>
+        
+    </nav>
+
     <div>
-        <h1> Cadastro de Devs</h1>
-        <p> Complete Suas Informações</p>
+        <h1 id="titulo"> Cadastro de Devs</h1>
+        <p id="subtitulo"> Complete Suas Informações</p>
         <br>
 
     </div>
 
     <form>
         <fieldset class="grupo">
-            <div>
+            <div class="campo">
                 <label for="Nome"><strong>Nome</strong></label>
                 <input type="text" name="Nome" id="Nome">
             </div>
 
-            <div>
+            <div class="campo">
                 <label for="Sobrenome"><strong>Sobrenome</strong></label>
                 <input type="text" name="Sobrenome" id="Sobrenome">
             </div>
 
         </fieldset>
         
-        <div>
+        <div class="campo">
             <label for="Email"><strong>Email</strong></label>
             <input type="email" name="email" id="email" required placeholder="seu.email@aqui.com">
 
@@ -39,7 +48,7 @@
 
         </div>
 
-        <div>
+        <div class="campo">
             <label><strong>De qual lado da aplicação você desenvolve?</strong></label>
             <label>
                 <input type="radio" name="devweb" value="frontend">Front-end
@@ -57,8 +66,8 @@
         </div>
 
         <div class="campo">
-            <label>Senioriade</label>
-            <select id="Senioriade">
+            <label for="senioridade"><strong>senioridade</strong></label>
+            <select id="Senioriade" required>
                 <option selected disabled value="">selecione</option>
                 <option>Junior</option>
                 <option>Pleno</option>
@@ -67,7 +76,7 @@
         </div>
 
         <fieldset class="grupo">
-            <div class="campo">
+            <div id="check">
                 <label><strong> Selecione as tecnologias que utiliza:</strong></label><br><br>
                 <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
                 <label for="tecnologia1"> HTML</label>
